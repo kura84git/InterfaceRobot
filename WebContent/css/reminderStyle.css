@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/* 全てに適用 */
+*{
+	box-sizing: border-box;
+}
+/* 背景 */
+div.background-image{
+	background-image: url("../images/backPicture08.jpg");
+	height: 100vh;
+	width: 100vw;
+}
+/* ヘッダー部分 */
+div.head-cover{
+	height: 10%;
+	width: 100%;
+	text-align: center;
+	font-size: 2.5rem;
+	position: relative;/* relative(親)とabsolute(子)とセットで使う */
+}
+div.head{
+	position: absolute;/* 座標位置が特定されているとき動きがないとき有効 */
+	top: 50%;
+	left: 50%;
+	-webkit-transform : translate(-50%,-50%);
+	transform : translate(-50%,-50%);
+	display: -webkit-flex; /* flex(横並び指定)オプションも多数あり、対象の親につける */
+	display: flex;
+}
+div.left-head{
+	text-align: center;
+    margin: 0 5px;
+}
+img.robot{
+	height: 35px;
+	width: 35px;
+}
+div.center-head{
+	margin: 0 5px;
+}
+div.right-head{
+	text-align: center;
+	margin: 0 5px;
+}
+img.robot2{
+	height: 35px;
+	width: 35px;
+}
+div.main-content {
+	height: 85%;
+	width: 100%;
+}
+div.title {
+	height: 15%;
+	font-size: 2.5rem;
+	position: relative;/* relative(親)とabsolute(子)とセットで使う */
+}
+div.second-head-cover{
+	width: 60%;
+	text-align: center;
+	position: absolute;/* 座標位置が特定されているとき動きがないとき有効 */
+	top: 50%;
+	left: 50%;
+	-webkit-transform : translate(-50%,-50%);
+	transform : translate(-50%,-50%);
+	display: -webkit-flex; /* flex(横並び指定)オプションも多数あり、対象の親につける */
+	display: flex;
+}
+div.second-head{
+	margin: 0 auto;
+	display: -webkit-flex; /* flex(横並び指定)オプションも多数あり、対象の親につける */
+	display: flex;
+}
+div.returnBox {
+	height: 100%;
+	font-size: 1.2rem;
+	padding-top: 10px;
+	margin-left: 20px;
+}
+div.return{
+	height: 100%;
+}
+a.link {
+	font-weight: bold;
+	text-decoration: none;
+}
+div.form-cover{
+	height: 10%;
+	width: 100%;
+	text-align: center;
+	position: relative;/* relative(親)とabsolute(子)とセットで使う */
+}
+div.form{
+	height: 100%;
+	width: 100%;
+	position: absolute;/* 座標位置が特定されているとき動きがないとき有効 */
+	top: 20%;
+	left: 50%;
+	-webkit-transform : translate(-50%,-50%);
+	transform : translate(-50%,-50%);
+	line-height: 30px;
+}
+div.remind-cover{
+	height: 75%;
+	width: 100%;
+	position: relative;/* relative(親)とabsolute(子)とセットで使う */
+}
+div.remindBox{
+	height: 100%;
+	width: 60%;
+	position: absolute;/* 座標位置が特定されているとき動きがないとき有効 */
+	top: 50%;
+	left: 50%;
+	-webkit-transform : translate(-50%,-50%);
+	transform : translate(-50%,-50%);
+	overflow-x: hidden;
+	overflow-y: scroll;
+	border: solid 1px blue;
+	padding: 2px 2px;
+	border-radius: 5px;
+}
+div.remind-flex {
+	display: -webkit-flex; /* flex(横並び指定)オプションも多数あり、対象の親につける */
+	display: flex;
+	justify-content: space-between;
+}
+div.anotherBox {
+	display: -webkit-flex; /* flex(横並び指定)オプションも多数あり、対象の親につける */
+	display: flex;
+}
+div.remind {
+	padding-top: 5px;
+	width: 70%;
+}
+div.category {
+	padding-top: 5px;
+	margin-right: 10px;
+}
+div.buttonBox {
+	display: -webkit-flex; /* flex(横並び指定)オプションも多数あり、対象の親につける */
+	display: flex;
+}
+div.button {
+	margin-left: 10px;
+}
+/* その他のjspファイルに適用 */
+div.remSort-category-title {
+	font-weight: bold;
+}
+p.remSort-category, p.remSortRes-remind{
+	text-align: center;
+	line-height: 20px;
+}
+div.title-cover{
+	height: 10%;
+	width: 100%;
+	position: relative;/* relative(親)とabsolute(子)とセットで使う */
+	text-align: center;
+}
+div.titleBox{
+	height: 100%;
+	width: 30%;
+	position: absolute;/* 座標位置が特定されているとき動きがないとき有効 */
+	left: 50%;
+	top: 50%;
+	-webkit-transform : translate(-50%,-50%);
+	transform : translate(-50%,-50%);
+	display: -webkit-flex; /* flex(横並び指定)オプションも多数あり、対象の親につける */
+	display: flex;
+}
+div.remUpd-main-cover, div.remUpdConfirm-main-cover, div.remDltConfirm-main-cover {
+	height: 75%;
+	position: relative;/* relative(親)とabsolute(子)とセットで使う */
+}
+div.remUpd-mainBox, div.remUpdConfirm-mainBox, div.remDltConfirm-mainBox{
+	position: absolute;/* 座標位置が特定されているとき動きがないとき有効 */
+	top: 30%;
+	left: 50%;
+	-webkit-transform : translate(-50%,-50%);
+	transform : translate(-50%,-50%);
+	text-align: center;
+	line-height: 50px;
+}
+div.remUpdRes-main-cover, div.remDltRes-main-cover {
+	height: 85%;
+	position: relative;/* relative(親)とabsolute(子)とセットで使う */
+}
+div.remUpdRes-mainBox, div.remDltRes-mainBox {
+	position: absolute;/* 座標位置が特定されているとき動きがないとき有効 */
+	top: 30%;
+	left: 50%;
+	-webkit-transform : translate(-50%,-50%);
+	transform : translate(-50%,-50%);
+	text-align: center;
+	line-height: 50px;
+}
+h2 {
+	margin: 10px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+}
+h3 {
+	margin: 10px;
+	font-size: 1.3rem;
+	text-align: center;
+}
+p.word {
+	font-weight: bold;
+}
+/* フッター部分 */
+div.footer{
+	height: 5%;
+	text-align: center;
+	padding-top: 5px;
+}
+/* ボタン */
+#button {
+	background-color: #008B8B;
+	color: white;
+	border-radius: 5px;
+}

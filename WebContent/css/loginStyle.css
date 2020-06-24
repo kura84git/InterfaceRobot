@@ -1,0 +1,47 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+}
+
+a.hreflink{
+	text-decoration: underline;
+}
+
+.b_button {
+   display       : inline-block;
+	border-radius : 3%;          /* 角丸       */
+	font-size     : 15pt;        /* 文字サイズ */
+	text-align    : center;      /* 文字位置   */
+	cursor        : pointer;     /* カーソル   */
+	margin-bottom: 5px;
+	padding       : 5px 5px;   /* 余白       */
+	background    : rgba(102, 102, 255, 0.74);     /* 背景色     */
+	color         : #ffffff;     /* 文字色     */
+	line-height   : 1em;         /* 1行の高さ  */
+	opacity       : 0.8;           /* 透明度     */
+	transition    : .3s;
+}
+.b_button:hover {
+	opacity       : 1;           /* カーソル時透明度 */
+}
+.a_button {
+	font-size:1.00em;
+	display:block;
+	width:140px;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:center;
+	border:2px solid;
+	border-color:#aaaaaa #444444 #444444 #aaaaaa;
+	background:#cccccc;
+}
+
+.a_button:hover {
+	background:#777777;
+}
+div.userInfo{
+	margin-bottom: 5px;
+}
+input.form{
+	margin-bottom: 5px;
+}

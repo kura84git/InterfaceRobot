@@ -1,0 +1,57 @@
+@charset "UTF-8";
+div.myInfo, div.searchBox, div.friendListBox, div.searchResult,
+div.addResult{
+	font-size: 1.5rem;
+}
+input.input{
+	font-size: 1.5rem;
+	margin-top: 5px;
+}
+input.submit{
+	display       : inline-block;
+	border-radius : 5%;          /* 角丸       */
+	font-size     : 15pt;        /* 文字サイズ */
+	text-align    : center;      /* 文字位置   */
+	cursor        : pointer;     /* カーソル   */
+	padding       : 5px 5px;   /* 余白       */
+	background    : rgba(102, 102, 255, 0.74);     /* 背景色     */
+	color         : #ffffff;     /* 文字色     */
+	line-height   : 1em;         /* 1行の高さ  */
+	opacity       : 0.8;           /* 透明度     */
+	transition    : .3s;
+}
+.submit:hover {
+  opacity       : 1;           /* カーソル時透明度 */
+}
+div.boxA, div.boxB, div.boxC, div.boxD{
+	margin-top: 5px;
+	display: -webkit-flex;
+	display: flex;
+}
+div.iconBox{
+	margin-right: 5px;
+}
+img.icon{
+	height: 20px;
+	width: 20px;
+}
+div.title{
+	font-size: 1.5rem;
+}
+div.topBox{
+	height: 15%;
+	text-align: center;
+	font-size: 2.5rem;
+	position: relative;/* relative(親)とabsolute(子)とセットで使う */
+}
+div.mainBox{
+	height: 80%;
+	position: relative;
+}
+div.mainContent{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform : translate(-50%,-50%);
+	transform : translate(-50%,-50%);
+}

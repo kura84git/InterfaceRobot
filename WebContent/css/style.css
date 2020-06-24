@@ -1,0 +1,71 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+	text-decoration: none;
+}
+div.bgImageIndex{
+	background-image: url("../images/backPicture03.jpg");
+	height: 100vh;
+	width: 100vw;
+}
+div.topBox{
+	height: 30%;
+	text-align: center;
+	font-size: 2.5rem;
+	position: relative;/* relative(親)とabsolute(子)とセットで使う */
+}
+div.top-cover{
+	position: absolute;/* 座標位置が特定せれているとき動きがないとき有効b */
+	top: 50%;
+	left: 50%;
+	-webkit-transform : translate(-50%,-50%);
+	transform : translate(-50%,-50%);
+	display: -webkit-flex; /* flex(横並び指定)オプションも多数あり、対象の親につける */
+	display: flex;
+}
+div.left-top, div.right-top{
+	text-align: center;
+    margin: 0 5px;
+}
+img.robot, img.robot2{
+	height: 35px;
+	width: 35px;
+}
+div.topContent{
+	margin: 0 5px;
+}
+div.mainBox{
+	height: 65%;
+	position: relative;
+}
+div.mainContent{
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	-webkit-transform : translate(-50%,-50%);
+	transform : translate(-50%,-50%);
+}
+p.login{
+	font-size: 1.2rem;
+	margin: 5px auto;
+}
+input.pass, input.userID{
+	margin: 3px;
+}
+p.register{
+	margin: 5px 0;
+}
+a.register{
+	text-decoration: none;
+}
+div.bottomBox{
+	height: 5%;
+	text-align: center;
+}
+div.title{
+	font-size: 1.5rem;
+	margin-bottom: 15px;
+}
+table.table{
+	border-spacing: 8px 0px;
+}

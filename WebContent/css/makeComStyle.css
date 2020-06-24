@@ -1,0 +1,41 @@
+@charset "UTF-8";
+div.mainBox{
+	height: 80%;
+	position: relative;
+}
+div.mainContent{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform : translate(-50%,-50%);
+	transform : translate(-50%,-50%);
+}
+table.table{
+	margin: 0 auto;
+}
+input.form{
+	margin-bottom: 5px;
+}
+div.boxA, div.boxB, div.boxC, div.boxD{
+	margin-top: 5px;
+	display: -webkit-flex;
+	display: flex;
+}
+div.boxX{
+	text-align: center;
+	margin: 5px auto;
+	display: -webkit-flex;
+	display: flex;
+}
+div.iconBox{
+	margin-right: 5px;
+}
+img.icon{
+	height: 20px;
+	width: 20px;
+}
+div.title{
+	font-size: 1.3rem;
+	margin: 15px 5px;
+	text-align: center;
+}

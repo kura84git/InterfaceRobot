@@ -1,0 +1,61 @@
+@charset "UTF-8";
+div.cover{
+	min-height: 8%
+	width: 100%;
+}
+div.rightCover{
+	max-width: 100%;
+	display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+div.boxRight{
+	padding: 2px 14px;/*吹き出しがタイムラインの側面にひっつかない様に隙間を開ける*/
+	color: #fff;/*テキストを白にする*/
+	background: #13178E;
+	border: 2px solid #13178E;
+	border-radius: 30px 30px 30px 0px;/*右下だけ尖らせて吹き出し感を出す*/
+	margin-right: 50px;/*右側の発言だとわかる様に、吹き出し左側に隙間を入れる*/
+	display: inline-block;
+ }
+ div.leftCover{
+	max-width: 100%;
+	display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+ }
+ div.boxLeft{
+ 	padding: 2px 14px;/*吹き出しがタイムラインの側面にひっつかない様に隙間を開ける*/
+	color: #333;/*テキストを黒にする*/
+	background: #fff;
+	border: 2px solid #13178E;
+	border-radius: 30px 30px 0px 30px;/*左下だけ尖らせて吹き出し感を出す*/
+	margin-right: 25px;
+	margin-left: 50px;/*左側の発言だとわかる様に、吹き出し右側に隙間を入れる*/
+	display: inline-block;
+ }
+ p.text{
+ 	word-break: break-all;
+ }
+ div.mainBox{
+	height: 80%;
+	width: 100%;
+	position: relative;
+}
+div.mainContent{
+	height: 100%;
+	width: 40%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform : translate(-50%,-50%);
+	transform : translate(-50%,-50%);
+}
+div.topTitle{
+	height: 25%;
+}
+ div.friendChat{
+	height: 75%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+ }
